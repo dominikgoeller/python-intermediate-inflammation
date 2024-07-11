@@ -66,7 +66,7 @@ def patient_normalise(data):
     normalised[normalised < 0] = 0
     return normalised
 
-def s_dev(data):
+def s_dev(data: np.ndarray):
     """Computes and returns standard deviation for data."""
     mmm = np.mean(data, axis=0)
     devs = []
